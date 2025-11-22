@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: roblox-flask-server
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
